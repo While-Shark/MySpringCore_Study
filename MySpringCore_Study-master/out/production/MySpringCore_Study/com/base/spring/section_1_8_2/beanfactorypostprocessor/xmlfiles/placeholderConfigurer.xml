@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+   <!-- 1、标准xml配置-->
+  <!--  <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+        <property name="locations" value="classpath:com/base/spring/section_1_8_2/beanfactorypostprocessor/propertyFiles/jdbc.properties"></property>
+        <property name="properties" value="custom.strategy.class=com.base.spring.section_1_8_2.beanfactorypostprocessor.pojo.Person"></property>
+    </bean>-->
+
+   <!-- 2、使用context标签命名-->
+    <!--<context:property-placeholder location="classpath:com/base/spring/section_1_8_2/beanfactorypostprocessor/propertyFiles/jdbc.properties"/>-->
+
+    <bean id="dataSource" destroy-method="close" class="com.base.spring.section_1_8_2.beanfactorypostprocessor.propertysourcesplaceholderconfigurer.MyBasticSource">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
+        <property name="locations">
+            <value>classpath:com/base/spring/section_1_8_2/beanfactorypostprocessor/propertyFiles/jdbc.properties</value>
+        </property>
+        <property name="properties">
+            <value>custom.strategy.class=com.base.spring.section_1_8_2.beanfactorypostprocessor.pojo.Person</value>
+        </property>
+    </bean>
+
+    <!-- 动态创建一个bean -->
+    <bean id="person" class="${custom.strategy.class}"/>
+
+
+
+</beans>
