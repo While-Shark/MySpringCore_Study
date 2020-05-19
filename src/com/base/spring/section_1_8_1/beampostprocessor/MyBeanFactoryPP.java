@@ -12,6 +12,7 @@ public class MyBeanFactoryPP implements BeanFactoryPostProcessor {
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
         DefaultListableBeanFactory defaultListableBeanFactory = (DefaultListableBeanFactory) beanFactory;
         //Person person = (Person) defaultListableBeanFactory.getBean("person");
+
         BeanDefinition person = defaultListableBeanFactory.getBeanDefinition("person");
         defaultListableBeanFactory.registerBeanDefinition("person1",person);
     }
