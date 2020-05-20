@@ -14,9 +14,4 @@
     <bean id="myInit" class="com.base.spring.section_1_8_1.beanpostprocessor.mybpp.InstantiationTracingBeanPostProcessor">
     </bean>
 
-
-    <bean id="myPP" class="com.base.spring.section_1_8_2.beanfactorypostprocessor.mybfpp.MyBeanFactoryPP"/>
-    <bean id="myPP2" class="com.base.spring.section_1_8_2.beanfactorypostprocessor.mybfpp.MyBeanFactoryPP2"/>
-
-
 </beans>

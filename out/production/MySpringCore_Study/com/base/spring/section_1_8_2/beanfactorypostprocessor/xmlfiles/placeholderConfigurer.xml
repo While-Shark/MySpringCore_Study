@@ -24,14 +24,25 @@
         <property name="locations">
             <value>classpath:com/base/spring/section_1_8_2/beanfactorypostprocessor/propertyFiles/jdbc.properties</value>
         </property>
-        <property name="properties">
+        <!--<property name="properties">
             <value>custom.strategy.class=com.base.spring.section_1_8_2.beanfactorypostprocessor.pojo.Person</value>
+        </property>-->
+        <property name="propertiesArray">
+            <list>
+                <value>custom.strategy.class=com.base.spring.section_1_8_2.beanfactorypostprocessor.pojo.Person</value>
+                <value>custom.strategy.class1=com.base.spring.section_1_8_2.beanfactorypostprocessor.pojo.Student</value>
+            </list>
         </property>
     </bean>
 
     <!-- 动态创建一个bean -->
     <bean id="person" class="${custom.strategy.class}"/>
+    <bean id="student" class="${custom.strategy.class1}">
+      <constructor-arg name="studentName" value="abc"/>
+      <constructor-arg name="age" value="22"/>
+    </bean>
 
-
+   <!-- 这个标签能覆盖属性值 -->
+    <context:property-override location="classpath:com/base/spring/section_1_8_2/beanfactorypostprocessor/propertyFiles/override.properties"/>
 
 </beans>

@@ -1,6 +1,7 @@
 package com.base.spring.section_1_8_2.beanfactorypostprocessor.propertysourcesplaceholderconfigurer;
 
 import com.base.spring.section_1_8_2.beanfactorypostprocessor.pojo.Person;
+import com.base.spring.section_1_8_2.beanfactorypostprocessor.pojo.Student;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {
@@ -14,8 +15,9 @@ public class Test {
 
 
         Person person = (Person) ac.getBean("person");
+        Student student = (Student) ac.getBean("student");
         System.out.println(person.toString());
-
+        System.out.println(student.toString());
         ac.close();
     }
 
