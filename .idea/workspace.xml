@@ -107,22 +107,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1867" height="323" key="GridCell.Tab.0.bottom" timestamp="1589938245201">
+    <state x="0" y="44" key="CommitChangelistDialog2" timestamp="1589938570504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589938245201" />
-    <state width="1867" height="323" key="GridCell.Tab.0.center" timestamp="1589938245200">
+    <state x="0" y="44" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1589938570504" />
+    <state width="1867" height="323" key="GridCell.Tab.0.bottom" timestamp="1589938573417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="323" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589938245200" />
-    <state width="1867" height="323" key="GridCell.Tab.0.left" timestamp="1589938245200">
+    <state width="1867" height="323" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589938573417" />
+    <state width="1867" height="323" key="GridCell.Tab.0.center" timestamp="1589938573417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="323" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589938245200" />
-    <state width="1867" height="323" key="GridCell.Tab.0.right" timestamp="1589938245200">
+    <state width="1867" height="323" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589938573417" />
+    <state width="1867" height="323" key="GridCell.Tab.0.left" timestamp="1589938573417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="323" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589938245200" />
+    <state width="1867" height="323" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589938573417" />
+    <state width="1867" height="323" key="GridCell.Tab.0.right" timestamp="1589938573417">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="323" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589938573417" />
     <state width="1867" height="323" key="GridCell.Tab.1.bottom" timestamp="1589938245968">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -139,6 +143,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1867" height="323" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589938245967" />
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2" timestamp="1589938576566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="188" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589938576566" />
     <state x="357" y="195" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1589938465149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
