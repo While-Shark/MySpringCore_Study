@@ -5,6 +5,7 @@
       <configuration>
         <fileset id="fileset" name="Beans" removed="false">
           <file>file://$MODULE_DIR$/src/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/com/base/spring/section_1_8_1/beanpostprocessor/xmlfiles/beans.xml</file>
         </fileset>
         <fileset id="fileset2" name="Init" removed="false">
           <file>file://$MODULE_DIR$/src/init.xml</file>
