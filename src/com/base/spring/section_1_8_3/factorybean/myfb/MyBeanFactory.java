@@ -8,10 +8,26 @@ import org.springframework.beans.factory.FactoryBean;
  * 可以采用实现FactoryBean接口的方式，将bean注入到ioc容器里。
  */
 public class MyBeanFactory implements FactoryBean {
+
+    /*private MyBean myBean;
+
+    public MyBeanFactory() {
+    }
+
+    public MyBean getMyBean() {
+        return myBean;
+    }
+
+    public void setMyBean(MyBean myBean) {
+        this.myBean = myBean;
+    }*/
+
     @Override
     public Object getObject() throws Exception {
         System.out.println("getObject");
-        return new MyBean();
+        MyBean myBean = new MyBean();
+        myBean.setName("my my my");
+        return myBean;
     }
 
     @Override

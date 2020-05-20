@@ -7,5 +7,8 @@
     <bean id="person" class="com.base.spring.section_1_8_3.factorybean.pojo.Person"></bean>
     <bean id="student" class="com.base.spring.section_1_8_3.factorybean.pojo.Student"></bean>
 
-    <bean id="myBeanFactory" class="com.base.spring.section_1_8_3.factorybean.myfb.MyBeanFactory"></bean>
+    <bean id="myBeanFactory" class="com.base.spring.section_1_8_3.factorybean.myfb.MyBeanFactory">
+     <!--  <property name="myBean" ref="myBean"></property>-->
+    </bean>
+   <!-- <bean id="myBean" class="com.base.spring.section_1_8_3.factorybean.pojo.MyBean"/>-->
 </beans>
