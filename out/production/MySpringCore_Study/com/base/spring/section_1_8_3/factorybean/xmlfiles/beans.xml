@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="person" class="com.base.spring.section_1_8_3.factorybean.pojo.Person"></bean>
+    <bean id="student" class="com.base.spring.section_1_8_3.factorybean.pojo.Student"></bean>
+
+    <bean id="myBeanFactory" class="com.base.spring.section_1_8_3.factorybean.myfb.MyBeanFactory">
+     <!--  <property name="myBean" ref="myBean"></property>-->
+    </bean>
+   <!-- <bean id="myBean" class="com.base.spring.section_1_8_3.factorybean.pojo.MyBean"/>-->
+</beans>
