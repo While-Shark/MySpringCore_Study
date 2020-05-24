@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+
+    <!--<bean class="com.base.spring.section_1_9_1.requiredannotation.pojo.Student">
+        &lt;!&ndash; inject any dependencies required by this bean &ndash;&gt;
+        <constructor-arg name="age" value="18"></constructor-arg>
+        <constructor-arg name="studentName" value="aaa"></constructor-arg>
+    </bean>-->
+
+    <!--<bean class="com.base.spring.section_1_9_1.requiredannotation.pojo.Student" >
+        &lt;!&ndash; inject any dependencies required by this bean &ndash;&gt;
+    </bean>-->
+    <bean id="student" class="com.base.spring.section_1_9_1.requiredannotation.pojo.Student">
+        <property name="studentName" value="good"></property>
+        <property name="age" value="20"></property>
+    </bean>
+
+</beans>
