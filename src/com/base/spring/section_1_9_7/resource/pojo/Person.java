@@ -1,4 +1,4 @@
-package com.base.spring.section_1_9_5.GenericsasAutowiringQualifiers.pojo;
+package com.base.spring.section_1_9_7.resource.pojo;
 
 public class Person {
 
