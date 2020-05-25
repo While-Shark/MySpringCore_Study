@@ -6,7 +6,7 @@
 
     <context:annotation-config/>
 
-    <bean class="com.base.spring.section_1_9_4.primarywithqualifier.pojo.Student" primary="true">
+    <bean class="com.base.spring.section_1_9_4.primarywithqualifier.pojo.Student">
         <!-- inject any dependencies required by this bean -->
         <constructor-arg name="age" value="18"></constructor-arg>
         <constructor-arg name="studentName" value="goodStudent"></constructor-arg>
