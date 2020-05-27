@@ -1,6 +1,6 @@
-package com.base.spring.section_1_9_7.resource.mydemo;
+package com.base.spring.section_1_9_7.resourceannotation.mydemo;
 
-import com.base.spring.section_1_9_7.resource.pojo.CustomerPreferenceDao;
+import com.base.spring.section_1_9_7.resourceannotation.pojo.CustomerPreferenceDao;
 import org.springframework.context.ApplicationContext;
 
 import javax.annotation.Resource;

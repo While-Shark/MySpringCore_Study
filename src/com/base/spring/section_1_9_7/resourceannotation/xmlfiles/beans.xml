@@ -6,5 +6,10 @@
 
     <context:annotation-config/>
 
-    
+    <bean class="com.base.spring.section_1_9_7.resourceannotation.mydemo.SimpleMovieLister"></bean>
+    <bean class="com.base.spring.section_1_9_7.resourceannotation.mydemo.MovieRecommender"></bean>
+
+    <bean name="myMovieFinder" class="com.base.spring.section_1_9_7.resourceannotation.pojo.MovieFinder"></bean>
+    <bean class="com.base.spring.section_1_9_7.resourceannotation.pojo.CustomerPreferenceDao"></bean>
+
 </beans>
