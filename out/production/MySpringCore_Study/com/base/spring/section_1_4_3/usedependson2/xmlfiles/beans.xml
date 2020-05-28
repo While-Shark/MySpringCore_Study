@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <!--ManagerBean和JdbcAccountDao先于ExampleBean完成实例化-->
+    <bean id="one" class="com.base.spring.section_1_4_3.usedependson2.example.ExampleBean" depends-on="managerBean,jdbcAccountDao">
+        <property name="managerBean" ref="managerBean"></property>
+    </bean>
+
+    <bean id="managerBean" class="com.base.spring.section_1_4_3.usedependson2.example.ManagerBean" ></bean>
+
+    <bean id="jdbcAccountDao" class="com.base.spring.section_1_4_3.usedependson2.example.JdbcAccountDao" ></bean>
+
+
+
+</beans>
