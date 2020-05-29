@@ -16,6 +16,10 @@ public class Test {
         Student per = (Student) ac.getBean("student");
         System.out.println(per.toString());
 
+        //自定义BeanFactoryPostProcessor处理了，所以这里能获取到
+        Object person1 = ac.getBean("person1");
+        System.out.println(person1);
+
     }
 
 }
